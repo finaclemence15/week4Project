@@ -1,0 +1,23 @@
+/* navigation style */
+nav ul {
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 18px;
+    padding-right: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: #ECF0F1;
+    margin-top:50px;
+}
+
+nav ul li a:hover {
+    background:#D7DBDD  ;
+    color:#784212;
+}
