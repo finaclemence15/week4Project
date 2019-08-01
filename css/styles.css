@@ -5,10 +5,11 @@
     font-size:20px;
     font-family: "Times New Roman", Times, serif;
     margin-bottom: 0;
-    padding-bottom:0px
+    padding-bottom:10px;
+    padding-top: 5px
 }
 h1{
-    font-size:60px;
+    font-size:40px;
     font-family: "Times New Roman", Times, serif;
 }
 nav ul li {
