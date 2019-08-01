@@ -6,7 +6,7 @@
     font-family: "Times New Roman", Times, serif;
     margin-bottom: 0;
     padding-bottom:10px;
-    padding-top: 5px
+    padding-top: 5px;
 }
 h1{
     font-size:40px;
@@ -62,4 +62,12 @@ ul button{
     color: grey;
     font-size: 22px;
     margin-left: 100px;
+  }
+  #button1{
+    border: none;
+    width:20%;
+    font-size:15px;
+    border-radius: 10px;
+    background-color: #424242;
+   
   }
