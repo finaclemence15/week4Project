@@ -118,14 +118,14 @@
               <!-- size -->
               <h2>Oder your Pizza Here</h2> <br>
     <label>Pizza size</label>
-    <select class="browser-default custom-select mb-4">
+    <select class="browser-default custom-select mb-4" id="size">
         <option value="1" selected>Small</option>
         <option value="2">Medium</option>
         <option value="3">Large</option>
     </select>
     <!-- crust -->
     <label>Crust</label>
-    <select class="browser-default custom-select mb-4">
+    <select class="browser-default custom-select mb-4" id="crust">
         <option value="1"  selected>Cheese Filled</option>
         <option value="2"> Crispy</option>
         <option value="3">Deep</option>
@@ -138,7 +138,7 @@
         <option value="10">Whole Wheat </option>
     </select>
     <label>Toppings</label>
-    <select class="browser-default custom-select mb-4">
+    <select class="browser-default custom-select mb-4" id="topp">
         <option value="1"  selected>Black Olive</option>
         <option value="2">Extra Cheese</option>
         <option value="3"> Green Pepper</option>
@@ -153,13 +153,14 @@
         <option value="12">Pineapple</option>
     </select>
     <label>Number of Pizza</label>
-    <input type="number" name="quantity" min="1"> <br> <br>
+    <input type="number" name="quantity" min="1" id="number"> <br> <br>
     <label>Delivery Option</label>
-    <select class="browser-default custom-select mb-4">
+    <select class="browser-default custom-select mb-4" id="delive">
         <option value="1" >Yes</option>
         <option value="2">No</option>
     </select>
-    <button type="button" id="button1">Ckeck Out</button>
+    <button type="button" id="button1">Oder</button> <br>
+    <button type="button" id="button2">Another Oder</button>
         </div>
       </div>  
    </div>

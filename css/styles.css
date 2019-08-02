@@ -63,7 +63,7 @@ ul button{
     font-size: 22px;
     margin-left: 50px;
   }
-  #button1{
+  #button1, #button2{
     border: none;
     width:20%;
     font-size:15px;
