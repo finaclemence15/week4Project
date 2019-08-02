@@ -36,7 +36,7 @@ ul button{
     color: #34495E;
     font-size: 15px  
 }
-#button{
+#button, #btn{
     border: none;
     padding: 10px;
     color: white;
@@ -61,7 +61,7 @@ ul button{
 .price{
     color: grey;
     font-size: 22px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   #button1{
     border: none;
@@ -71,3 +71,7 @@ ul button{
     background-color: #424242;
    
   }
+  /* #form{
+    display: none;
+    text-align: center;
+  } */
