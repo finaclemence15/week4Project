@@ -38,24 +38,26 @@ function Oder(pizzaSize, crust, toppings,numberOfPiza,derivery) {
   
       var inputtedPizzaSize = $("select#size").val();
       var inputtedCrust = $("select#crust").val();
-      var inputtedToppings = $("select#crust").val();
-      var inputtedNumberOfPiza = $("select#number").val();
+      var inputtedToppings = $("select#topp").val();
+      var inputtedNumberOfPiza = $("input#number").val();
       var inputtedDerivery = $("select#delive").val();
       var newOrder = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings, inputtedNumberOfPiza, inputtedDerivery);
   
-      $(".new-address").each(function() {
-        var inputtedStreet = $(this).find("input.new-street").val();
-        var inputtedCity = $(this).find("input.new-city").val();
-        var inputtedState = $(this).find("input.new-state").val();
-        var newAddress = new Address(inputtedStreet, inputtedCity, inputtedState)
-        newContact.addresses.push(newAddress)
+      $("#form").each(function() {
+        var  inputtedPizzaSize = $(this).find("select#size").val();
+        var inputtedCrust = $(this).find("select#crust").val();
+        var inputtedToppings = $(this).find("select#topp").val();
+        var inputtedNumberOfPiza = $(this).find("input#number").val();
+        var inputtedDerivery = $(this).find("select#delive").val();
+        var newOrder = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings, inputtedNumberOfPiza, inputtedDerivery);
+        newOrder.push(newOrder)
       });
   
-      $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+      $("p#contacts").append("<span class='contact'>" + newOrder() + "</span>");
   
       $(".contact").last().click(function() {
-        $("#show-contact").show();
-        $("#show-contact h2").text(newContact.fullName());
+        $("#show-order").show();
+        // $("#show-order h2").text(newContact.fullName());
         $(".first-name").text(newContact.firstName);
         $(".last-name").text(newContact.lastName);
         $("ul#addresses").text("");
