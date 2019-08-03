@@ -84,17 +84,20 @@ function Order(pizzaSize, crust, toppings,numberOfPiza,derivery) {
         var inputtedToppings = $(this).find("select#topp").val();
         var inputtedNumberOfPiza = $(this).find("input#number").val();
         var inputtedDerivery = $(this).find("select#delive").val();
-        var newOrder = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings, inputtedNumberOfPiza, inputtedDerivery);
-        newOrder.push(newOrder)
+        var newOrder1 = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings, inputtedNumberOfPiza, inputtedDerivery);
+        newOrder.push(newOrder1)
       });
   
-      $("p#contacts").append("<span class='contact'>" + newOrder() + "</span>");
+      $("p#contacts").append("<span class='contact'>" + newOrder.fullOrder() + "</span>");
   
       $(".contact").last().click(function() {
         $("#show-order").show();
-        // $("#show-order h2").text(newContact.fullName());
-        $(".first-name").text(newContact.firstName);
-        $(".last-name").text(newContact.lastName);
+        $("#show-order h2").text(newOrder.fullOrder());
+        $(".pizza-size").text(newOrder.pizzaSize);
+        $(".crust").text(newOrder.crust);
+        $(".toppings").text(newOrder.toppings );
+        $(".number-of").text(newOrder.numberOfPiza);
+        $(".option").text(newOrder.derivery);
         $("ul#addresses").text("");
         newContact.addresses.forEach(function(address) {
           $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
