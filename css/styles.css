@@ -132,3 +132,6 @@ h3{
      font-family: "Times New Roman", Times, serif;
      color: #7D3C98;
   }
+  #show-order {
+    display: none;
+  }

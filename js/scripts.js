@@ -98,9 +98,9 @@ function Order(pizzaSize, crust, toppings,numberOfPiza,derivery) {
         $(".toppings").text(newOrder.toppings );
         $(".number-of").text(newOrder.numberOfPiza);
         $(".option").text(newOrder.derivery);
-        $("ul#addresses").text("");
-        newContact.addresses.forEach(function(address) {
-          $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
+        $("p#ada").text("");
+        newOrder.ada.forEach(function(ad) {
+          $("p#ada").append(" " + ad.fullOrders() + " ");
         });
       });
   
