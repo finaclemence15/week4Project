@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Jumbotron and navigation bar -->
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <nav class="navbar navbar-light">
+        <h1> <strong> Online Pizza Order</strong> </h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+       </nav>
+      </div> <br>
+      <div class="row"> 
+        <div class="col-sm-12" id="form">
+        <!-- size -->
+        <h2>Oder your Pizza Here</h2> <br>
+        <label>Pizza size</label>
+        <select class="browser-default custom-select mb-4" id="size">
+            <option value="1" selected>Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+        </select>
+        <!-- crust -->
+        <label>Crust</label>
+        <select class="browser-default custom-select mb-4" id="crust">
+            <option value="1"  selected>Cheese Filled</option>
+            <option value="2"> Crispy</option>
+            <option value="3">Deep</option>
+            <option value="4">Detroit</option>
+            <option value="5">Flatbread</option>
+            <option value="6"> Gluten-free</option>
+            <option value="7">Neo-Neapolitan</option>
+            <option value="8">Romana</option>
+            <option value="9">Stuffed</option>
+            <option value="10">Whole Wheat </option>
+        </select>
+        <label>Toppings</label>
+        <select class="browser-default custom-select mb-4" id="topp">
+            <option value="1"  selected>Black Olive</option>
+            <option value="2">Extra Cheese</option>
+            <option value="3"> Green Pepper</option>
+            <option value="4">Mashroom</option>
+            <option value="5">Bacon</option>
+            <option value="6">Onion</option>
+            <option value="7">Sausage</option>
+            <option value="8">Pepperoni</option>
+            <option value="9">Tomatoes</option>
+            <option value="10">Chiken</option>
+            <option value="11">Beef</option>
+            <option value="12">Pineapple</option>
+        </select>
+        <label>Number of Pizza</label>
+        <input type="number" name="quantity" min="1" id="number"> <br> <br>
+        <label>Delivery Option</label>
+        <select class="browser-default custom-select mb-4" id="delive">
+            <option value="1" >Yes</option>
+            <option value="2">No</option>
+        </select>
+        <button type="button" id="button1">Oder</button>
+        <button type="button" id="button2">Another Oder</button>
+            <!-- <h2>Your Order</h2>
+            <p id="contacts"></p>   
+            </div> -->
+            <!--  -->
+            <!-- <div class="col-md-6">
+              <div id="show-order">
+                <h2></h2>
+                <p>Pizza size: <span class="pizza-size"></span></p>
+                <p>Crust: <span class="crust"></span></p>
+                <p>Toppings: <span class="toppings"></span></p>
+                <p>Number of Pizza: <span class="number-of"></span></p>
+                <p> Delivery Option: <span class="option"></span> </p>
+              </div>
+            </div> -->
+          </div>  
+       </div>
+     
+        <!-- FOOTER --> <br>
+    <div class="row-max-5">
+      <div class="col-sm-12">
+         <div class="footer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <h4>You can visit Our social media account</h4>
+       <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+       <a href="https://twitter.com/twitter?lang=en" class="fa fa-twitter" target="_blank"></a>
+       <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+       <a href="https://www.instagram.com/?hl=en" target="_blank" class="fa fa-instagram"></a>
+       <!-- <p>This template is made by AIMEE CLEMENCE <span id="symbol">&hearts;</span></p> -->
+       <p>&copy; 2019 Copy Right  All right reserved.<p>
+     </div>
+    </div>
+    </div> 
+    </div>
+</body>
+</html>

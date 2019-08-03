@@ -1,11 +1,25 @@
 //business logic
-function Oder(pizzaSize, crust, toppings,numberOfPiza,derivery) {
+function Order(pizzaSize, crust, toppings,numberOfPiza,derivery) {
     this.pizzaSize = pizzaSize;
     this.crust = crust;
     this.toppings = toppings ;
     this.numberOfPiza = numberOfPiza;
     this.derivery = derivery;
   } 
+
+  function Orders(pizzaSize2, crust2, toppings2,numberOfPiza2,derivery2) {
+    this.pizzaSize1 = pizzaSize2;
+    this.crust1 = crust2;
+    this.toppings1 = toppings2 ;
+    this.numberOfPiza1 = numberOfPiza2;
+    this.derivery1 = derivery2;
+  }
+  Order.prototype.fullOrder=function(){
+    return this.sizePizza + " " + this.pizzaSize + " " +this.crust+ " " + this.toppings + " " +this.numberOfPiza+" "+this.derivery;
+    }      
+  Orders.prototype.fullOrders=function(){
+        return this.pizzaSize1 + " " + this.crust1 + " " +this.toppings1+ " " + this.numberOfPiza1 + " " +this.derivery1;
+      }
   function resetFields() {
       $("select#size").val("");
       $("select#crust").val("");
@@ -16,22 +30,43 @@ function Oder(pizzaSize, crust, toppings,numberOfPiza,derivery) {
   // user interface logic
   $(document).ready(function() {
   
-    // $("#add-address").click(function() {
-    //   $("#new-addresses").append('<div class="new-address">' +
-    //                                '<div class="form-group">' +
-    //                                  '<label for="new-street">Street</label>' +
-    //                                  '<input type="text" class="form-control new-street">' +
-    //                                '</div>' +
-    //                                '<div class="form-group">' +
-    //                                  '<label for="new-city">City</label>' +
-    //                                  '<input type="text" class="form-control new-city">' +
-    //                                '</div>' +
-    //                                '<div class="form-group">' +
-    //                                  '<label for="new-state">State</label>' +
-    //                                  '<input type="text" class="form-control new-state">' +
-    //                                '</div>' +
-    //                              '</div>');
-    // });
+    $("#button2").click(function() {
+      $("#form").append('<div class="new-address">' +
+                                   '<label>Pizza size</label>' +
+                                     ' <select class="browser-default custom-select mb-4" id="size">' +' <option value="1" selected>Small</option>'+
+                                     '<option value="2">Medium</option>'+'<option value="3">Large</option>'+ '</select>'+
+                                     '<label>Crust</label>'+'<select class="browser-default custom-select mb-4" id="crust">'+
+                                    '<option value="1"  selected>Cheese Filled</option>'+
+                                    '<option value="2"> Crispy</option>'+
+                                    '<option value="3">Deep</option>'+
+                                    '<option value="4">Detroit</option>'+
+                                    '<option value="5">Flatbread</option>'+
+                                    '<option value="6"> Gluten-free</option>'+
+                                    '<option value="7">Neo-Neapolitan</option>'+
+                                    '<option value="8">Romana</option>'+
+                                    '<option value="9">Stuffed</option>'+
+                                    '<option value="10">Whole Wheat </option>'+'</select>'+'<label>Toppings</label>'+
+                                    '<select class="browser-default custom-select mb-4" id="topp">'+
+                                        '<option value="1"  selected>Black Olive</option>'+
+                                        '<option value="2">Extra Cheese</option>'+
+                                        '<option value="3"> Green Pepper</option>'+
+                                        '<option value="4">Mashroom</option>'+
+                                        '<option value="5">Bacon</option>'+
+                                        '<option value="6">Onion</option>'+
+                                        '<option value="7">Sausage</option>'+
+                                        '<option value="8">Pepperoni</option>'+
+                                        '<option value="9">Tomatoes</option>'+
+                                        '<option value="10">Chiken</option>'+
+                                        '<option value="11">Beef</option>'+
+                                        '<option value="12">Pineapple</option>'+
+                                    '</select>'+'<label>Number of Pizza</label>'+
+                                    '<input type="number" name="quantity" min="1" id="number"> <br> <br>'+
+                                    '<label>Delivery Option</label>'+
+                                    '<select class="browser-default custom-select mb-4" id="delive">'+
+                                        '<option value="1" >Yes</option>'+
+                                        '<option value="2">No</option>'+
+                                    '</select>');
+    });
   
     $("div#form").submit(function(event) {
       event.preventDefault();

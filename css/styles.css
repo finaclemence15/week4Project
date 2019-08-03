@@ -87,13 +87,6 @@ ul button{
     font-size: 30px;
     
   }
-  .bd-example{
-    width:auto;
-    height:auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* z-index: 2; */
-    cursor: pointer;
-  }
   /* footer styles  */
 
 .footer{
@@ -118,5 +111,24 @@ ul button{
     text-align: center;
 }
 #head1{
-  text-align: center
+  text-align: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-left: 450px;
+  margin-right: 450px;
 }
+h3{
+  text-align: center;
+  color: #95A5A6;
+  font-size: 30px;
+  background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #order{
+     text-align: center;
+     font-size: 30px;
+     font-family: "Times New Roman", Times, serif;
+     color: #7D3C98;
+  }
