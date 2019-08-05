@@ -10,27 +10,19 @@ function Order(pizzaSize, crust, toppings, pizzaSizeP, crustP,toppingsP,derivery
     // this.NumberOfPiza = numberOfPiza;
     this.derivery = derivery;
   } 
-
-  // function Orders(pizzaSize2, crust2, toppings2,numberOfPiza2,derivery2) {
-  //   this.pizzaSize1 = pizzaSize2;
-  //   this.crust1 = crust2;
-  //   this.toppings1 = toppings2 ;
-  //   this.numberOfPiza1 = numberOfPiza2;
-  //   this.derivery1 = derivery2;
-  // }
   Order.prototype.fullOrder=function(){
     return this.pizzaSizeVal  +this.crustVal + this.toppingsVal;
     }      
   // Orders.prototype.fullOrders=function(){
   //       return this.pizzaSize1 + " " + this.crust1 + " " +this.toppings1+ " " + this.numberOfPiza1 + " " +this.derivery1;
   //     }
-  // function resetFields() {
-  //     $("select#size3").val("");
-  //     $("select#crust3").val("");
-  //     $("select#topping3").val("");
-  //     $("input#number3").val("");
-  //     $("select#delive3").val("");
-  // }
+  function resetFields() {
+      $("select#size3").val("");
+      $("select#crust3").val("");
+      $("select#topping3").val("");
+      $("input#number3").val("");
+      $("select#delive3").val("");
+  }
   // user interface logic
   $(document).ready(function() {
   
@@ -86,19 +78,6 @@ function Order(pizzaSize, crust, toppings, pizzaSizeP, crustP,toppingsP,derivery
       var newOrder = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings,inputtedPizzaSizeP,inputtedCrustP,inputtedToppingsP,inputtedDerivery,);
       
   
-      // $("#form").each(function() {
-      //   var  inputtedPizzaSize = $(this).find("select#size").val();
-      //   var inputtedCrust = $(this).find("select#crust").val();
-      //   var inputtedToppings = $(this).find("select#topp").val();
-      //   var inputtedNumberOfPiza = $(this).find("input#number").val();
-      //   var inputtedDerivery = $(this).find("select#delive").val();
-      //   var newOrder1 = new Order(inputtedPizzaSize, inputtedCrust, inputtedToppings, inputtedNumberOfPiza, inputtedDerivery);
-      //   newOrder.push(newOrder1)
-      // });
-  
-      // $("p#contacts").append("<p> <span class='contact'>" + newOrder.fullOrder() + "</span></p>");
-  
-      // $("#button1").click(function() {
         $("#show-order").show();
         console.log(newOrder.pizzaSizeVal+ newOrder.crustVal+ newOrder.toppingsVal+ newOrder.derivery);
         // $("#show-order h2").text(newOrder.fullOrder());
@@ -108,13 +87,11 @@ function Order(pizzaSize, crust, toppings, pizzaSizeP, crustP,toppingsP,derivery
         // $(".number-of").text(newOrder.NumberOfPiza);
         $(".option").text(newOrder.derivery);
         $(".cost").text(newOrder.fullOrder());
-        // $("p#ada").text("");
-        // newOrder.ada.forEach(function(ad) {
-        //   $("p#ada").append(" " + ad.fullOrders() + " ");
+        
         });
       });
   
-      // resetFields();
-            // console.log();
+      resetFields();
+          
     
   // });
