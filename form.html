@@ -21,55 +21,53 @@
         </ul>
        </nav>
       </div> <br>
-      <div class="row-max-5"> 
-        <div class="col-sm-6" id="form">
+      <div class="row-max-5">
+        <div class="col-sm-6">
         <!-- size -->
         <h2>Oder your Pizza Here</h2> <br>
+        <form id="form-group">
+        <div  id="size">
         <label>Pizza size</label>
-        <select class="browser-default custom-select mb-4" id="size">
-            <option value="1" selected>Small</option>
-            <option value="2">Medium</option>
-            <option value="3">Large</option>
+        <select class="form-control" id="size3">
+            <option value="1500" selected>Small:1500 Rwf</option>
+            <option value="2000">Medium:2000 Rwf</option>
+            <option value="3000">Large:3000 Rwf</option>
         </select>
+      </div>
         <!-- crust -->
+        <div id="crust">
         <label>Crust</label>
-        <select class="browser-default custom-select mb-4" id="crust">
-            <option value="1"  selected>Cheese Filled</option>
-            <option value="2"> Crispy</option>
-            <option value="3">Deep</option>
-            <option value="4">Detroit</option>
-            <option value="5">Flatbread</option>
-            <option value="6"> Gluten-free</option>
-            <option value="7">Neo-Neapolitan</option>
-            <option value="8">Romana</option>
-            <option value="9">Stuffed</option>
-            <option value="10">Whole Wheat </option>
+        <select class="form-control" id="crust3">
+            <option value="800"  selected>Cheese Filled:800 Rwf </option>
+            <option value="600"> Crispy:600 Rwf</option>
+            <option value="750">Deep:750 Rwf</option>
+            <option value="500">Detroit:500 Rwf</option>
         </select>
+      </div>
+      <div id="topp">
         <label>Toppings</label>
-        <select class="browser-default custom-select mb-4" id="topp">
-            <option value="1"  selected>Black Olive</option>
-            <option value="2">Extra Cheese</option>
-            <option value="3"> Green Pepper</option>
-            <option value="4">Mashroom</option>
-            <option value="5">Bacon</option>
-            <option value="6">Onion</option>
-            <option value="7">Sausage</option>
-            <option value="8">Pepperoni</option>
-            <option value="9">Tomatoes</option>
-            <option value="10">Chiken</option>
-            <option value="11">Beef</option>
-            <option value="12">Pineapple</option>
-        </select>
+        <select class="form-control" id="topping3">
+            <option value="1200"  selected>Black Olive:1200 Rwf</option>
+            <option value="1080">Extra Cheese:1080 Rwf</option>
+            <option value="950"> Green Pepper:950 Rwf</option>
+            <option value="805">Mashroom:805 Rwf</option>
+        </select> <br>
+      </div>
+      <!-- <div id="number">
         <label>Number of Pizza</label>
-        <input type="number" name="quantity" min="1" id="number"> <br> <br>
+        <input type="number" name="quantity" min="1" id="number3"> <br> <br>
+      </div> -->
+      <div  id="delive">
         <label>Delivery Option</label>
-        <select class="browser-default custom-select mb-4" id="delive">
-            <option value="1" >Yes</option>
-            <option value="2">No</option>
-        </select>
+        <select class="form-control" id="delive3">
+            <option value="yes" >Yes</option>
+            <option value="No">No</option>
+        </select> <br>
+      </div>
         <button type="button" id="button1">Oder</button>
-        <button type="button" id="button2">Another Oder</button> 
-            </div>
+        <button type="button" id="button2">Another Oder</button>
+           </form>        
+          </div>
             <div class="col-sm-6">
               <div id="show-order">
                   <h2>Your Order</h2>
@@ -78,15 +76,15 @@
                 <p>Pizza size: <span class="pizza-size"></span></p>
                 <p>Crust: <span class="crust"></span></p>
                 <p>Toppings: <span class="toppings"></span></p>
-                <p>Number of Pizza: <span class="number-of"></span></p>
+                <!-- <p>Number of Pizza: <span class="number-of"></span></p> -->
                 <p> Delivery Option: <span class="option"></span> </p>
-                <p id="ada">
+                <p> Total Cost: <span class="cost"></span> </p>
+                <!-- <p id="ada">
 
-                </p>
+                </p> -->
               </div>
             </div>
-          </div>
-           
+          </div>           
        </div>
      
         <!-- FOOTER --> <br>
