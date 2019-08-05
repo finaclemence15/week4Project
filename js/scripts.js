@@ -88,9 +88,9 @@ function Order(pizzaSize, crust, toppings,numberOfPiza,derivery) {
         newOrder.push(newOrder1)
       });
   
-      $("p#contacts").append("<span class='contact'>" + newOrder.fullOrder() + "</span>");
+      $("p#contacts").append("<span class='Order'> " + newOrder.fullOrder() + " </span>");
   
-      $(".contact").last().click(function() {
+      $("#button1").last().click(function() {
         $("#show-order").show();
         $("#show-order h2").text(newOrder.fullOrder());
         $(".pizza-size").text(newOrder.pizzaSize);
@@ -105,6 +105,6 @@ function Order(pizzaSize, crust, toppings,numberOfPiza,derivery) {
       });
   
       resetFields();
-  
+            console.log();
     });
   });
