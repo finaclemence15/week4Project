@@ -131,3 +131,9 @@ h3{
   #show-order {
     display: none;
   }
+  #copy{
+    font-size:10px;
+   }
+   #info{
+     text-align: center;
+   }
